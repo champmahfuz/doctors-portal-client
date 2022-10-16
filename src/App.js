@@ -7,6 +7,7 @@ import Login from './Pages/Login/Login';
 import Appiontment from './Pages/Appiontment/Appiontment';
 import SignUp from './Pages/Login/SignUp';
 import RequireAuth from './Pages/Login/RequireAuth';
+import ForgetPassword from './Pages/Login/ForgetPassword';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="login" element={<Login />} />
+        <Route path="forgetPassword" element={<ForgetPassword />} />
         <Route path="signup" element={<SignUp />} />
         <Route path="appointment" element={<RequireAuth>
           <Appiontment />

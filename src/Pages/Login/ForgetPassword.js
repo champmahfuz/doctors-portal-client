@@ -6,6 +6,16 @@ import auth from '../../firebase.init';
 
 const ForgetPassword = () => {
 
+    /*   const forgetLoad = async (req, res) => {
+          try {
+              res.render('forget');
+          } catch (error) {
+              console.log(error.message);
+          }
+      } */
+
+
+
 
     const { register, formState: handleSubmit } = useForm();
 
@@ -27,7 +37,7 @@ const ForgetPassword = () => {
             <div className="card w-96 bg-base-100 shadow-xl">
                 <div className="card-body">
                     <h2 className="text-center text-2xl font-bold">Forget Password</h2>
-                    <form onSubmit={handleSubmit(onSubmit)}>
+                    <form >
 
                         <div className="form-control w-full max-w-xs mb-2">
                             <label className="label">
@@ -53,7 +63,7 @@ const ForgetPassword = () => {
                     </form>
 
                     <button
-                        className="btn btn-outline mb-2">Send OTP</button>
+                        className="btn btn-outline mb-2" type='submit'>Send OTP</button>
 
                     <button className="btn btn-outline"><Link to='/'>Back</Link></button>
                 </div>
